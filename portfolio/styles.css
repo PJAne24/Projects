@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    z-index: -1;
+}
+
+.plantilla{
+    display: grid;
+}
+
+.plantilla-flex{
+    display: flex;
+}
+
+.header{
+    padding: 10px;
+    grid-template-columns: auto 40%;
+    
+    & span{
+        width: fit-content;
+        color: white;
+        font-size: 40px;
+        cursor: pointer;
+    }
+}
+
+.menu{
+    width: auto;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    
+    & a{
+        height: fit-content;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+main{
+    background-color: transparent;
+     height: 60%;
+}
+
+.sobreMi{
+    flex-direction: column;
+    align-content: flex-start;
+    margin: 5%;
+
+    & p{
+        width: 50%;
+    }
+}
+
+.estudios{
+    flex-direction: column;
+    align-content: flex-start;
+    margin: 5%;
+
+    & p{
+        width: 50%;
+    }
+}
+
+.idiomas{
+    flex-direction: column;
+    align-content: flex-start;
+    margin: 5%;
+
+    & p{
+        width: 50%;
+    }
+}
+
+.skills{
+    flex-direction: column;
+    align-content: flex-start;
+    margin: 5%;
+
+    & p{
+        width: 50%;
+    }
+}
+
+footer{
+     height: auto;
+}
+
+/*
+si las particulas se ponen hacia el frente aplicar esto
+position: relative
+z-index:99*/
